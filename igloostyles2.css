@@ -364,6 +364,9 @@ body {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
+    .nav-list a {
+        font-size: 16px;
+    }
 }
 
 html {
@@ -464,14 +467,17 @@ input:focus, select:focus, textarea:focus {
 }
 
 .nav-list {
-    display: inline-flex;
-    list-style: none;
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+
 .nav-list li {
     margin: 0 15px;
+   
 }
 
 .nav-list a {
@@ -479,6 +485,15 @@ input:focus, select:focus, textarea:focus {
     font-size: 1.2rem;
     color: white;
     transition: color 0.3s ease;
+
+
+}
+.nav-list a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .nav-list a:hover {
