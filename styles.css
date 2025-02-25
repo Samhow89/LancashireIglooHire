@@ -92,11 +92,11 @@
   }
   /* For mobile, section titles are left-aligned */
   .section-title {
-    text-align: left;
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
     position: relative;
-    display: inline-block;
+    display: block;
     font-weight: 700;
   }
   .section-title::after {
