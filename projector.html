@@ -2,37 +2,139 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YQX0BWRX0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2YQX0BWRX0');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YQX0BWRX0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2YQX0BWRX0');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lancashire Igloo Hire</title>
-    <link rel="stylesheet" href="projector.css">
+    <title>Projector Instructions - Lancashire Igloo Hire</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        .instructions-section {
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%);
+            color: white;
+            padding: 60px 20px;
+            min-height: 100vh;
+        }
+        .instructions-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .instructions-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        .instructions-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .instructions-header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        .instruction-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #00b4d8;
+            animation: fadeInUp 0.6s ease;
+            animation-fill-mode: forwards;
+        }
+        .instruction-item:nth-child(1) { animation-delay: 0.1s; }
+        .instruction-item:nth-child(2) { animation-delay: 0.2s; }
+        .instruction-item:nth-child(3) { animation-delay: 0.3s; }
+        .instruction-item:nth-child(4) { animation-delay: 0.4s; }
+        .instruction-item:nth-child(5) { animation-delay: 0.5s; }
+        .instruction-item:nth-child(6) { animation-delay: 0.6s; }
+        .instruction-item h3 {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .instruction-item p {
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 12px 28px;
+            background-color: #00b4d8;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #00d4ff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <section id="thank-you" class="thank-you">
-        <img src="glogo.png" alt="Lancashire Igloo Hire Logo" class="thank-you-logo">
-        <div class="thank-you-content">
-            <h1>Projector instructions</h1>
-            <p><b>Power On:</b> Use the remote control or the power button to turn on the projector.</p>
+    <section class="instructions-section">
+        <div class="instructions-container">
+            <div class="instructions-header">
+                <h1>🎬 Projector Instructions</h1>
+                <p>Follow these simple steps to use your projector</p>
+            </div>
 
-            <p><b>Connect Amazon Fire Stick: </b>Plug the provided Amazon Fire Stick into the HDMI port on the projector. Connect it to your Wi-Fi via the "Settings" > "Network" menu.</p>
-        
-            <p><b>Streaming Services: </b>You can access Netflix, Amazon Prime, and YouTube using your own login details. Please remember to log out after use.</p>
+            <div class="instruction-item">
+                <h3>Power On</h3>
+                <p>Use the remote control or the power button located on the projector to turn it on.</p>
+            </div>
 
-            <p><b>Volume Control: </b>Adjust the volume using the projector’s controls.</p>
+            <div class="instruction-item">
+                <h3>Connect Amazon Fire Stick</h3>
+                <p>Plug the provided Amazon Fire Stick into the HDMI port on the projector. Connect it to your Wi-Fi via Settings > Network menu.</p>
+            </div>
 
-            <p><b>Focus Adjustment: </b>You can adjust the picture focus at the front of the projector.</p>
+            <div class="instruction-item">
+                <h3>Streaming Services</h3>
+                <p>Access Netflix, Amazon Prime, YouTube, and other streaming services using your own login details. Remember to log out after use.</p>
+            </div>
 
-            <p><b>Using Your Laptop: </b>To connect your laptop, use the provided HDMI cable. After connecting the power and HDMI cable, Go to Settings > Display and select Extend Display.</p>
-            <button onclick="window.location.href='index.html'" class="back-button">Home</button>
+            <div class="instruction-item">
+                <h3>Volume Control</h3>
+                <p>Adjust the volume using the projector's remote controls or the buttons on the device itself.</p>
+            </div>
+
+            <div class="instruction-item">
+                <h3>Focus Adjustment</h3>
+                <p>You can adjust the picture focus using the focus ring at the front of the projector for a crystal-clear image.</p>
+            </div>
+
+            <div class="instruction-item">
+                <h3>Using Your Laptop</h3>
+                <p>To connect your laptop, use the provided HDMI cable. After connecting the power and HDMI cable, go to Settings > Display and select "Extend Display".</p>
+            </div>
+
+            <a href="index.html" class="back-button">← Return to Home</a>
         </div>
     </section>
 </body>
